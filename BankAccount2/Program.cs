@@ -57,13 +57,25 @@ namespace BankAccount2
                     {
                         Checking Depo = new Checking();
                         Console.WriteLine("How much money would you like to deposit into your Savings Account?");
-
                     }
                 }
                 else if (userChoice == four)
                 {
                     Console.WriteLine("[a] Checking Account \n[b] Savings Account");
                     string usrChoice = Console.ReadLine().ToLower();
+                    string a = "a";
+                    string b = "b";
+                    if (usrChoice == a)
+                    {
+                        Checking Depo = new Checking();
+                        Console.WriteLine("How much money would you like to withdraw from your Checking Account?");
+                        Console.WriteLine("Your total Amount in your checking account is {0}.");
+                    }
+                    else if (usrChoice == b)
+                    {
+                        Checking Depo = new Checking();
+                        Console.WriteLine("How much money would you like to withdraw from your Savings Account?");
+                    }
                 }
                 else if (userChoice == five)
                 {
